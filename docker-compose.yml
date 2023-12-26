@@ -1,0 +1,10 @@
+version: "3.9"
+
+# Services
+services:
+  jupyter-server:
+    image: cryptolabinc/heaan-stat:latest
+    ports:
+      - "8888:8888"
+    environment:
+      - JUPYTER_TOKEN=token

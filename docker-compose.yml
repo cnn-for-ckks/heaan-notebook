@@ -7,4 +7,11 @@ services:
     ports:
       - "8888:8888"
     environment:
-      - JUPYTER_TOKEN=token
+      - JUPYTER_TOKEN=kinankeren
+    volumes:
+      - jupyter-data:/root
+
+# Volume
+volumes:
+  jupyter-data:
+    driver: local
